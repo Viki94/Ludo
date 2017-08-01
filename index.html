@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ludo</title>
+
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="background"></div>
+        <div id="dice"></div>
+        <div id="roll" onmouseover="activeDice()" onmouseout="inactiveDice()" onclick="rollDice()">R O L L</div>
+        <div id="circle"></div>
+        <div id="active-purple" onclick="movePurple()"></div>
+        <div id="active-blue" onclick="moveBlue()"></div>
+        <div id="start" onclick="startGame()">S T A R T</div>
+        <div id="bang" onclick="continueGame()"></div>
+        <div id="winner-purple" onclick="startNewGame()">W I N N E R</div>
+        <div id="winner-blue" onclick="startNewGame()">W I N N E R</div>
+        <div id="path"></div>
+        <div id="pathNumbers"></div>
+        <div id="logo"></div>
+        <script src="file.js"></script>
+    </div>
+</body>
+
+</html>

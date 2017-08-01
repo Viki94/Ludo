@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    height: 100%;
+    width: auto;
+}
+
+#background, #dice, #roll, #circle, #path, #final, #final-text, #logo  {
+    filter: brightness(30%);
+}
+
+#roll, #start, #winner-purple, #winner-blue, #final-text, span {
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#background {
+    background-image: url('Images/background.jpg');
+    width: 100%;
+    height: 709px;
+    position: relative;
+}
+
+#dice, #roll, #circle, #active-purple, #active-blue, #start, #bang, #winner-purple, #winner-blue, #logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#dice {
+    background-image: url('Images/6_dise.png');
+    width: 13%;
+    height: 13%;
+    bottom: 75%;
+    left: 82%;
+}
+
+#roll {
+    background-image: url('Images/Button.png');
+    width: 12%;
+    height: 8%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 66.5%;
+    left: 79%;
+    font-size: 150%;
+    text-align: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#roll:hover {
+    background-image: url('Images/hover_Button.png');
+    width: 12%;
+    height: 8%;
+    cursor: pointer;
+}
+
+#circle {
+    background-image: url('Images/circle.png');
+    width: 3%;
+    height: 3%;
+    bottom: 73%;
+    left: 84.5%;
+    z-index: 1;
+}
+
+#active-purple {
+    background-image: url('Images/active_purpule.png');
+    width: 20%;
+    height: 20%;
+    bottom: 40%;
+    left: 32%;
+    z-index: 3;
+    pointer-events: none;
+}
+
+#active-blue {
+    background-image: url('Images/active_blue.png');
+    width: 20%;
+    height: 20%;
+    bottom: 40%;
+    left: 57%;
+    z-index: 3;
+    pointer-events: none;
+}
+
+#start {
+    background-image: url('Images/Button.png');
+    width: 19%;
+    height: 13%;
+    bottom: 55%;
+    left: 40%;
+    font-size: 150%;
+    z-index: 1;
+}
+
+#start:hover {
+    background-image: url('Images/hover_Button.png');
+    width: 19%;
+    height: 13%;
+    cursor: pointer;
+}
+
+#bang {
+    background-image: url('Images/Bang.png');
+    width: 58%;
+    height: 58%;
+    top: 3%;
+    left: 32% ;
+    z-index: 3;
+    visibility: hidden;
+}
+
+#winner-purple {
+    background-image: url('Images/WinnerPurpule.png');
+    }
+
+#winner-blue {
+    background-image: url('Images/WinnerBlue.png');
+}
+
+#winner-purple, #winner-blue {
+    width: 90%;
+    height: 80%;
+    background-position-x: center;
+    background-position-y: top;
+    font-size: 300%;
+    text-align: center;
+    top: 3%;
+    left: 3%;
+    z-index: 3;
+    visibility: hidden;
+}
+
+#path {
+    width: 9%;
+    height: 10.5%;
+    position: absolute;
+    bottom:95%;
+    top: 3%;
+    left:47.5%;
+}
+
+#pathNumbers { 
+    width: 1%;
+    height: 21%;
+    position: absolute;
+    bottom: 95%;
+    top: 3%;
+    left: 47.5%;
+}
+
+#final {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    bottom: 0%;
+    left: 46.5%;
+}
+
+#final-text {
+    position: absolute;
+    bottom: 6%;
+    left: 54%;
+    font-size: 150%;
+}
+
+#logo {
+    background-image: url('Images/logo_Naxex.png');
+    width: 18%;
+    height: 18%;
+    bottom: 0;
+    left: 5%;
+}
